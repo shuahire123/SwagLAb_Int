@@ -1,0 +1,12 @@
+<test thread-count="5" name="LoginTestF">
+<parameter name="BrowserName" value="firefox"></parameter>
+    <classes>
+      <class name="Login.test"/>
+    </classes>
+  </test> <!-- LoginTest -->
+<test thread-count="5" name="LoginTestE">
+<parameter name="BrowserName" value="edge"></parameter>
+    <classes>
+      <class name="Login.test"/>
+    </classes>
+  </test> <!-- LoginTest -->

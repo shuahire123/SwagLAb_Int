@@ -1,0 +1,22 @@
+name: SwagLab
+parallel: tests
+configFailurePolicy: skip
+tests:
+  - name: LoginTestC
+  parallel: tests
+  parameters: { BrowserName: chrome }
+  classes:
+    - Login.test
+
+  - name: LoginTestF
+  parallel: tests
+  parameters: { BrowserName: firefox }
+  classes:
+    - Login.test
+
+  - name: LoginTestE
+  parallel: tests
+  parameters: { BrowserName: edge }
+  classes:
+    - Login.test
+
